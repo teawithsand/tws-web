@@ -12,7 +12,7 @@ import {
 describe("useBreakpoint stuff", () => {
 	describe("breakpointMediaDown", () => {
 		it("works on examples", () => {
-			expect(breakpointMediaDown(BREAKPOINT_XXL)).toEqual("")
+			expect(breakpointMediaDown(BREAKPOINT_XXL)).toEqual("(min-width: 0px)")
 			expect(breakpointMediaDown(BREAKPOINT_XL)).toEqual(
 				"(max-width: 1399.98px)"
 			)
@@ -47,7 +47,7 @@ describe("useBreakpoint stuff", () => {
 			expect(breakpointMediaUp(BREAKPOINT_SM)).toEqual(
 				"(min-width: 576px)"
 			)
-			expect(breakpointMediaUp(BREAKPOINT_XS)).toEqual("")
+			expect(breakpointMediaUp(BREAKPOINT_XS)).toEqual("(min-width: 0px)")
 		})
 	})
 })
